@@ -1,0 +1,137 @@
+body{
+  padding-top: 80px;
+}
+.Header{
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style:solid ;
+  border-bottom-color:rgb(242, 242, 242) ;
+  z-index: 100;
+
+  
+}
+.start-section{
+  display: flex;
+  align-items: center;
+
+}
+.middle-section{
+  
+  flex: 2;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  
+
+}
+.search-bar{
+  flex:1;
+  height:34px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+.search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 15px;
+}
+.search-icon{
+  height: 20px;
+}
+.end-section{
+  
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  flex-shrink: 0;
+
+
+}
+.upload-img{
+  height: 30px;
+
+}
+.youtubeapps{
+  height: 24px;
+}
+.notifications-img{
+  
+  height: 24px;
+
+}
+.rakeshChannelPic{
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+.hamburger{
+  height:24px;
+  margin-left: 24px;
+  margin-right: 24px;
+
+}
+.youtube{
+  margin-left: 18px;
+  height: 30px;
+}
+.voice-search-button{
+  height: 38px;
+  width:40px;
+  border-radius: 20px;
+  border: none;
+
+  
+
+}
+.search-button{
+  height: 38px;
+  width:40px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+  position: relative;
+  
+}
+.search-button .tooltip-search{
+  position: absolute;
+  
+}
+.number-red{
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  font-family: Roboto,Arial;
+  font-size: 10px;
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+}
+.fix-number{
+  position: relative;
+}

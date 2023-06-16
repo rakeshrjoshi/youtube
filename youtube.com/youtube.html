@@ -2,101 +2,175 @@
 <html>
   <head>
     <title>
-      YouTube Clone
+      YouTube
     </title>
-    <style>
-      img{
-        width: 300px;
-        display: inline-block;
-      }
-      .text-box{
-        display:block;
-        margin-bottom: 50px;
-      }
-      
-      .video-preview1{
-        width: 310px;
-        vertical-align: top ;
-        display: inline-block;
-      }
-      .profile_pic1{
-        width: 40px;
-        display: inline-block;
-        vertical-align: top;
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-      }
-      .profile_pic2{
-        width: 40px;
-        display: inline-block;
-        vertical-align: top;
-      }
-      .channel-name1{
-        display: inline-block;
-        margin-left: 10px;
-      }
-      .channel-name2{
-        display: inline-block;
-        vertical-align: top;
-      }
-      .channel-picture-1{
-        display: inline-block;
-        border-radius: 20px;
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
 
-      }
-      .description-1{
-        display: inline-block;
-        width: 200px;
-      }
-    </style>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
 
   </head>
+
   <body>
-    <input class="text-box" type="text" placeholder="Search">
-    <div class="video-preview1">
-      <div>
-        <img src="thumbNails/hq720.webp" alt="maharajImage">
-      </div>
-      <div>
-        <div class="channel-picture-1">
-          <img class="profile_pic1" src="thumbNails/unnamed (1).jpg" alt="">
-<!-- to build horizontal layout we will make our division block to inline -->
-
-        </div>
-        <div class="descrioption-1">
-          <p class="img1-text ">मन मुझे बार-बार गिरा देता है फिर भजन साधन सब छूट जाता है, क्या करूँ ?</p>
-        </div>
-        <p class="channel-name1">Bhajan Marg</p>
-      <p class="views-1">54K views &#183; 20 hours ago</p>
+    <div class="Header">
+      
+      <div class="start-section">
+        <img class="hamburger" src="thumbNails/hamburger-menu.svg" alt="hamber">
+        <img class="youtube" src="thumbNails/youtube-logo.svg" alt="youtube logo">
 
       </div>
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    <div class="video-preview1">
-      
-      <img src="thumbNails/hq72.webp" alt="maharajImage">
-      
-      <p class="img1-text ">HTML & CSS Full Course - Beginner to Pro</p>
-      <img class="profile_pic2"  src="thumbNails/unnamed.jpg" alt="">
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button"><img class="search-icon" src="thumbNails/search-img.svg" alt=""></button>
+           <div class="tooltip-search">Search</div>
+        <button class="voice-search-button"><img src="thumbNails/voice-search-icon-img.svg" alt="search-img"></button>
+        
 
-      <p class="channel-name1">SuperSimpleDev</p>
-      <p class="views-1">3M views &#183; 20 hours ago</p>
-      
+      </div>
+      <div class="end-section">
+        <img class="upload-img" src="thumbNails/upload-img.svg" alt="">
+        <img class="youtubeapps" src="thumbNails/youtube-apps.svg" alt="">
+        <div class="fix-number"><img class="notifications-img" src="thumbNails/notifications-img.svg" alt="">
+          <div class="number-red">3</div></div>
+
+        
+        <img class="rakeshChannelPic" src="thumbNails/rakeshChannelPic.jpg" alt="">
+
+      </div>
     </div>
-    
-    <div class="video-preview1">
-      
-      <img src="thumbNails/hq72.webp" alt="maharajImage">
-      
-      <p class="img1-text ">HTML & CSS Full Course - Beginner to Pro</p>
-      <img class="profile_pic2"  src="thumbNails/unnamed.jpg" alt="">
-      <p class="channel-name1">SuperSimpleDev</p>
-      <p class="views-1" > 4.8M views &#183; 1 Year ago </p>
+    <div class="sidebar">
+      <div class="sidelink"><img class="home" src="thumbNails/home.svg" alt=""><div>Home</div></div>
+      <div class="sidelink"><img class="explore" src="thumbNails/explore.svg" alt=""><div>Explore</div></div>
+      <div class="sidelink"><img class="subscriptions" src="thumbNails/subscriptions.svg" alt=""><div>Subscriptions</div></div>
+      <div class="sidelink"><img class="originals" src="thumbNails/originals.svg" alt=""><div>originals</div></div>
+      <div class="sidelink"><img class="youtube-music" src="thumbNails/youtube-music.svg" alt=""><div>Youtube Music</div></div>
+      <div class="sidelink"><img class="library" src="thumbNails/library.svg" alt=""> <div>Library</div></div>
     </div>
+
+    <div class="grid">
+      <div class="video-container-1">
+        <div class="video-image-1">
+          <img class="thumbnailss" src="thumbNails/1st.webp" alt="video-1-image">
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="profile-video-discription-1">
+          
+          <div class="video-picsd">
+            <img class="profile-pic" src="thumbNails/profile-1.jpeg" alt="">
+          </div>
+
+          
+          <div class="video-discription-1">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p>Marques Brownlee</p>
+            <p>3.4M views · 6 months ago</p>
+          </div>
+        </div>       
+      </div>
+      
+      <div class="video-container-1">
+        <div class="video-image-1">
+          <img class="thumbnailss" src="thumbNails/hq72.webp" alt="video-1-image">
+        </div>
+        <div class="profile-video-discription-1">
+          
+          <div class="video-picsd">
+            <img class="profile-pic" src="thumbNails/unnamed.jpg" alt="">
+          </div>
+
+          
+          <div class="video-discription-1">
+            <p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
+            <p>SuperSimpleDev</p>
+            <p>4.9M views · 1 year ago</p>
+          </div>
+        </div>       
+      </div>
+
+      <div class="video-container-1">
+        <div class="video-image-1">
+          <img class="thumbnailss" src="thumbNails/hq720.webp" alt="video-1-image">
+        </div>
+        <div class="profile-video-discription-1">
+          
+          <div class="video-picsd">
+            <img class="profile-pic" src="thumbNails/unnamed (1).jpg" alt="">
+          </div>
+
+          
+          <div class="video-discription-1">
+            <p class="video-title">मन मुझे बार-बार गिरा देता है फिर भजन साधन सब छूट जाता है, क्या करूँ ?</p>
+            <p>Bhajan Marg</p>
+            <p>5.4M views · 3 months ago</p>
+          </div>
+        </div>       
+      </div>
+      <div class="video-container-1">
+        <div class="video-image-1">
+          <img class="thumbnailss" src="thumbNails/hq720 (1).webp" alt="video-1-image">
+        </div>
+        <div class="profile-video-discription-1">
+          
+          <div class="video-picsd">
+            <img class="profile-pic" src="thumbNails/unnamed (1).jpg" alt="">
+          </div>
+
+          
+          <div class="video-discription-1">
+            <p class="video-title">जबसे कॉलेज के दोस्तों का संग हुआ है तबसे भजन में मन नहीं लगता, मार्गदर्शन करें !</p>
+            <p>Bhajan Marg</p>
+            <p>2.4M views · 9 months ago</p>
+          </div>
+        </div>       
+      </div>
+      <div class="video-container-1">
+        <div class="video-image-1">
+          <img class="thumbnailss" src="thumbNails/hq720 (2).webp" alt="video-1-image">
+        </div>
+        <div class="profile-video-discription-1">
+          
+          <div class="video-picsd">
+            <img class="profile-pic" src="thumbNails/profile-4.jpg" alt="">
+          </div>
+
+          
+          <div class="video-discription-1">
+            <p class="video-title">* क्या आपका मन अशांत है , परेशान है ?|| * अशांत मन को कैसे शांत करें ?||</p>
+            <p>Sadhana Path</p>
+            <p>1.4M views · 1 year ago</p>
+          </div>
+        </div>       
+      </div>
+
+      <div class="video-container-1">
+        <div class="video-image-1">
+          <img class="thumbnailss" src="thumbNails/hq720 (3).webp" alt="video-1-image">
+        </div>
+        <div class="profile-video-discription-1">
+          
+          <div class="video-picsd">
+            <img class="profile-pic" src="thumbNails/profile-6.jpg" alt="">
+          </div>
+
+          
+          <div class="video-discription-1">
+            <p class="video-title">Hari Sunder Nand Mukunda | हरी सूंदर नन्द मुकुन्दा | Krishna Bhajan | Beautiful Krishna Bhajan</p>
+            <p>Bhajan India</p>
+            <p>2.4M views · 1 months ago</p>
+          </div>
+        </div>       
+      </div>
+
+    </div>
+
   </body>
+
 </html>
